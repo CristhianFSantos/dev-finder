@@ -1,0 +1,28 @@
+@import url("../styles.css");
+header {
+  max-width: var(--max-width-default);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.8em;
+}
+
+header > h1 {
+  color: var(--text-color);
+  font-size: 1.5em;
+}
+
+.change-mode {
+  display: flex;
+  align-items: center;
+}
+
+.change-mode > span {
+  margin: 5px;
+  color: var(--text-color);
+}
+.fas {
+  margin: 5px;
+  font-size: 1.4em;
+  color: var(--text-color);
+}
