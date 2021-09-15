@@ -1,0 +1,35 @@
+<div class="card-container">
+  <header class="card-container__header">
+    <img [src]="user.avatar_url" alt="Avatar" />
+    <div class="card-container__name-login">
+      <h1>{{ user.name }}</h1>
+      <span
+        ><strong>@{{ user.login }}</strong></span
+      >
+      <p>Joined 09 Set 2020</p>
+    </div>
+  </header>
+  <p class="card-container__bio">
+    {{ user.bio }}
+  </p>
+  <main class="card-container__table">
+    <p class="table__title repos">Repos</p>
+    <p class="table__title followers">Followers</p>
+    <p class="table__title following">Following</p>
+    <h3 class="table__data">{{ user.public_repos }}</h3>
+    <h3 class="table__data">{{ user.followers }}</h3>
+    <h3 class="table__data">{{ user.following }}</h3>
+  </main>
+  <footer class="card-container__social">
+    <i class="fas fa-map-marker-alt social__icon"></i>
+    <p class="social__text">{{ user.location }}</p>
+    <i class="fas fa-link social__icon"></i>
+    <p class="social__text">{{ user.blog }}</p>
+    <i class="fab fa-twitter social__icon"></i>
+    <p class="social__text">{{ user.twitter_username }}</p>
+    <i class="fas fa-building social__icon"></i>
+    <p class="social__text">
+      {{ user.company }}
+    </p>
+  </footer>
+</div>

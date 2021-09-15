@@ -1,0 +1,89 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  max-width: var(--max-width-default);
+  background-color: var(--card-color);
+  padding: 2em 0.8em;
+  border-radius: 0.8em;
+}
+
+.card-container__header {
+  display: flex;
+  margin-bottom: 1.6em;
+}
+
+.card-container__header > img {
+  height: 6em;
+  border-radius: 50%;
+  margin-right: 2em;
+}
+
+.card-container__name-login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.card-container__name-login > h1 {
+  color: var(--text-color);
+  font-size: 1.1em;
+}
+
+.card-container__name-login > span {
+  color: var(--details-color);
+  font-size: 0.9em;
+}
+
+.card-container__name-login > p {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+.card-container__bio {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--text-color);
+  font-size: 1em;
+  margin-bottom: 1.6em;
+}
+
+.card-container__table {
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 0.8em;
+  border-radius: 0.8em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 1em;
+  margin-bottom: 1.6em;
+}
+
+.card-container__table > p,
+.card-container__table > h3 {
+  color: var(--text-color);
+}
+
+.card-container__table > p {
+}
+
+.card-container__social {
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 1em;
+}
+
+footer > i,
+footer > p {
+  color: var(--text-color);
+}
+
+.social__icon {
+  font-size: 1.2em;
+}
