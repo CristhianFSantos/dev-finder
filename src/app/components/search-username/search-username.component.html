@@ -1,0 +1,12 @@
+<div class="search-container">
+  <i class="fas fa-search search-container__icon"></i>
+  <input
+    #searchInput
+    class="search-container__input"
+    type="text"
+    placeholder="Search GitHub username..."
+  />
+  <button (click)="getUser(searchInput.value)" class="search-container__button">
+    Search
+  </button>
+</div>
