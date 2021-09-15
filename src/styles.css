@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background-color: #141c2f;
+  --card-color: #1f2a48;
+  --text-color: #ffffff;
+  --placeholder-text: #ffffffa1;
+  --details-color: #0079fe;
+  --font-family-default: "Courier Prime", monospace;
+  --max-width-default: 350px;
+}
+
+.dark-mode:root {
+  --background-color: #ced6ec;
+  --card-color: #909dc0;
+  --text-color: #2e2e2e;
+  --placeholder-text: #000000a1;
+  --details-color: #af1010;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  font-family: var(--font-family-default);
+  padding-top: 16em;
+}
